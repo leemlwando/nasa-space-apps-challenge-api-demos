@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            EPIC API
+        </title>
+
+        <style>
+            img{
+                width: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>IMAGES FROM NASA EPIC API</h1>
+
+        <script src="/static/js/index.js"></script>
+
+        <img src="https://epic.gsfc.nasa.gov/archive/natural/2018/10/16/png/epic_1b_20181016015634.png ">
+    </body>
+    <script>
+        fetch('https://epic.gsfc.nasa.gov/api/natural').then(res=>res.json())
+            .then(r=>console.log(r)).catch(err=>console.log(err))
+       </script>
+</html>

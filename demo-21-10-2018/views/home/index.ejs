@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Hackers Guild</title>
+        <style>
+            table, th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welome to NASA space app challenge</h1>
+        <br>
+        <ul>
+            <li>Presenter : Lee M. Lwando</li>
+            <li>Topic : BUILDING REST APIS IN NODEJS</li>
+            <li>Event: NASA Space apps challenge</li>
+            <li>Location: Hackers Guild , lusaka, Zambia</li>
+            <li>Works At: Microtech Cloud Solutions</li>
+            <li>Position: CTO</li>
+        </ul>
+        <br>
+        <br>
+        <H2>API documentation</H2>
+        <table style="width:100%">
+            <thead>
+                <th>Endpoint</th>
+                <th>Full url</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/api/v1</td>
+                    <td>http://localhost:3000/api/v1</td>
+                    <td>
+                        This is the index url. the very first endpoint.
+                        returns information about the author of api, and a welcome message.
+                        <br>
+                        {
+                            success:true,
+                            message:"welcome",
+                        }
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+        <H2>Status Codes</H2>
+        <table style="width:100%">
+            <thead>
+                <th>Code</th>
+                <th>Explanation</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>200 ­ OK</td>
+                    <td>Everything worked as expected.</td>
+                    
+                </tr>
+                <tr>
+                        <td>400 ­ Bad Request</td>
+                        <td>The request was unacceptable, often due to missing a required parameter.</td>
+                        
+                </tr>
+                <tr>
+                        <td>404 ­ Not Found</td>
+                        <td>The requested resource doesn’t exist</td>
+                        
+                </tr>
+                <tr>
+                        <td>500, 502, 503, 504 ­ Server Errors</td>
+                        <td>Something went wrong on the API’s end. (These are rare.)</td>
+                        
+                </tr>
+
+               
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
