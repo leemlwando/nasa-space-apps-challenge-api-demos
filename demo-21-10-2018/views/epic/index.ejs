@@ -17,9 +17,13 @@
         <script src="/static/js/index.js"></script>
 
         <img src="https://epic.gsfc.nasa.gov/archive/natural/2018/10/16/png/epic_1b_20181016015634.png ">
+
+        <img
+        src="https://apod.nasa.gov/apod/image/1608/Perseid_Cabrerizo_MG_2805_1200.jpg"
+        >
     </body>
     <script>
         fetch('https://epic.gsfc.nasa.gov/api/natural').then(res=>res.json())
-            .then(r=>console.log(r)).catch(err=>console.log(err))
+            .then(r=> localStorage.getItem('epic') ? console.log('in cache') : localStorage.setItem('epic',r)).catch(err=>console.log(err))
        </script>
 </html>

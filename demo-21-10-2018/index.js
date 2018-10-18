@@ -1,8 +1,11 @@
 /**
  * require the needed packages 
  */
+
 //load enviroment congigurations here
 require('dotenv').config();
+//load databse connection
+const {db} = require('./lib/db');
 //import express
 const express = require('express');
 

@@ -44,6 +44,33 @@
                         }
                     </td>
                 </tr>
+
+                <tr>
+                        <td>/api/v1/apod</td>
+                        <td>http://localhost:3000/api/v1/apod</td>
+                        <td>
+                            This api endpoint returns APODS results from NASAs API.
+                            <br>
+                            <code>
+                                <strong>params:</strong><br>
+                                date : year-month-day <br>
+                                hd: Boolean <br>
+                            </code>
+                            <p>
+                                a resource will be picked of the date provided. hd determines wether or not to send hd resource.
+                            </p>
+                            <strong>example</strong><br>
+                            <code>
+                                http://url/api/v1/apod?date=2018-10-18&hd=true
+                            </code> <br>
+                            <i>no parameters are given, defaults will be provided</i><br>
+                            <code>
+                                date : today <br>
+                                hd   : false  
+
+                            </code>
+                        </td>
+                    </tr>
                
             </tbody>
         </table>
